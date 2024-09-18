@@ -1,4 +1,4 @@
-import logo from "./images/react.png";
+import logo from "./../../images/react.png";
 function Header() {
   return (
     <div className="pt-2 pl-2" style={{ borderBottom: "1px solid #777" }}>
