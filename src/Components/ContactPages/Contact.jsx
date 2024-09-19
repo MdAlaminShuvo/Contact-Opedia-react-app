@@ -35,12 +35,16 @@ const Contact = (props) => {
           <i className="bi bi-pencil-square" style={{ fontSize: "1rem" }}></i>
         </button>
         <button className="btn btn-danger btn-sm m-1">
-          <i className="bi bi-trash-fill" style={{ fontSize: "1rem" }}></i>
+          <i
+            className="bi bi-trash-fill"
+            onClick={() => props.deleteContact(props.contact.id)}
+            style={{ fontSize: "1rem" }}
+          ></i>
         </button>
       </div>
-      <button className="btn btn-secondary form-control">
+      {/* <button className="btn btn-secondary form-control">
         {props.contact.name}
-      </button>
+      </button> */}
     </div>
   );
 };
